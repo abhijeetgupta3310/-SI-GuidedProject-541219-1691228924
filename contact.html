@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="s.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="th.jpg" alt="Logo" width="300" height="100" />
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="dropdown">
+          <div class="dropbtn" id="loginBtn">Login</div>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="login.html">Student</a>
+            <a href="login.html">Faculty</a>
+            <a href="login.html">Admin</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Send" />
+      </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

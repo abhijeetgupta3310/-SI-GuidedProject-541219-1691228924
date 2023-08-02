@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+* {
+  font-family: "Space Mono", monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f9f9;
+  background-image: url("event_1.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.navbar {
+  background-color: white;
+  margin: 2rem;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav-links li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.nav-links li a:hover {
+  color: #555;
+}
+
+.dropdown {
+  padding: 1rem;
+  position: relative;
+}
+
+.dropdown-content {
+  opacity: 0;
+  pointer-events: none;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropbtn {
+  cursor: pointer;
+  color: white;
+  background-color: #007bff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+.hero {
+  color: white;
+  text-align: center;
+  padding: 50px;
+  /* background-color: #f1f1f17f; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+.contact-section {
+  color: white;
+  text-align: center;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-section h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1c1c1cef;
+  padding: 3rem;
+  color: rgb(240, 239, 239);
+  border-radius: 10px;
+}
+
+.contact-section label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+.contact-section textarea {
+  resize: vertical;
+}
+
+.contact-section input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-section input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.login-section {
+  color: white;
+  text-align: center;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-section h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.login-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1c1c1cef;
+  padding: 3rem;
+  color: rgb(240, 239, 239);
+  border-radius: 10px;
+}
+
+.login-section label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.login-section input[type="text"],
+.login-section input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+.login-section input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-section input[type="submit"]:hover {
+  background-color: #0056b3;
+}
