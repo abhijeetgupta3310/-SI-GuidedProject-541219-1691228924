@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: std-app-deploy
+ labels:
+   app: std-app
+spec:
+ replicas: 3
+ selector:
+   matchLabels:
+     app: std-app
+ template:
+   metadata:
+     labels:
+       app: std-app
+   spec:
+    containers:
+      - name: std-app
+        image: mahidhar23/studentassignment:1.0
+        ports:
+        - containerPort: 5000
